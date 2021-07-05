@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <style>
+        .container{
+            display:grid;
+            height:100vh;
+            grid-template-columns:2fr 2fr 2fr;
+            grid-template-rows:1fr 3fr 1fr 1fr 2fr 2fr;
+            grid-gap:30px;
+            grid-template-areas: 
+            "a a a"
+            "b c d"
+            "e e e"
+            "f f f"
+            "g h i"
+            "j k l"
+        ;
+        }
+
+      @media only screen and (max-width:1200px){
+          .container{
+          grid-template-columns:1fr;
+          grid-template-rows:0.5fr 4fr 4fr 4fr 0.5fr 0.5fr 0.5fr 2fr 2fr 2fr 2fr 2fr;
+           grid-template-areas: 
+           "a"
+           "b"
+           "c"
+           "d"
+           "e"
+           "f"
+           "g"
+           "h"
+           "i"
+           "j"
+           "k"
+           "l";
+
+
+
+          }
+      }
+       @media only screen and (max-width:850px){
+          .container{
+          grid-template-columns:1fr 1fr;
+          grid-template-rows:0.5fr 4fr 4fr 4fr 1fr 2fr 2fr 2fr ;
+           grid-template-areas: 
+           "a a"
+           "b c"
+           "d"
+           "e"
+           "f"
+           "g h"
+           "i j"
+           "k l"
+           ;
+
+
+
+          }
+      }
+      
+        nav{
+            grid-area:a;
+            background-color:white;
+        }
+        #pic1{
+              grid-area:b;
+            background-color:white;
+        }
+          #pic2{
+              grid-area:c;
+            background-color:white;
+        }
+            #pic3{
+              grid-area:d;
+             background-color:white;
+        }
+#post{
+     grid-area:e;
+            background-color:red;
+        }
+#post1{
+     grid-area:f;
+           background-color:white;
+        }
+
+#is1{ grid-area:g;
+          background-color:white;
+
+}
+#is2{ grid-area:h;
+           background-color:white;
+
+}
+#is3{ grid-area:i;
+          background-color:white;
+
+}
+#is4{ grid-area:j;
+         background-color:white;
+
+}
+#is5{ grid-area:k;
+         background-color:white;
+
+}
+#is6{ grid-area:l;
+            background-color:white;
+
+}
+
+.box{
+    height:30px;
+    width:18%;
+    background-color:red;
+    margin:auto;
+    color:white;
+    font-size: 20px;
+    text-align:center;
+    
+}
+.box2{ margin:auto;
+    font-size: 20px;
+    text-align:center;
+    }
+
+
+     
+    </style>
+    <div class="container">
+<nav style="margin:auto;">
+
+    <span style="margin-left:10px;color:red">News and update</span>
+    <h1 style="margin:auto;">Our blog posts</h1>
+   </nav>
+<div id="pic1">
+    <img src="https://via.placeholder.com/450"></div>
+<div id="pic2"> <img src="https://via.placeholder.com/450"></div>
+<div id="pic3"><img src="https://via.placeholder.com/450"></div>
+<div id="post" class="box"> <span style="margin-top:20px;">View all posts</span></div>
+<div id="post1" class="box2">
+    <h3 style="color:red">Services</h3>
+    <h1>Our Services</h1>
+    <p style="margin:auto;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+</div>
+<div id="is1" style="text-align:center">
+    <h3 style="text-align:center;">Innovative structures</h3>
+cras sit ameth nibh libero,in gravada nulla.Nulla vel metus scelerisque ante sollicitum</div>
+<div id="is2"  style="text-align:center"><h3>Architectural design</h3>
+cras sit ameth nibh libero,in gravada nulla.Nulla vel metus scelerisque ante sollicitum</div>
+<div id="is3"  style="text-align:center"><h3>Interior Design</h3>
+cras sit ameth nibh libero,in gravada nulla.Nulla vel metus scelerisque ante sollicitum</div>
+<div id="is4"  style="text-align:center"><h3>Modern WINDOW Design</h3>
+cras sit ameth nibh libero,in gravada nulla.Nulla vel metus scelerisque ante sollicitum</div>
+<div id="is5"  style="text-align:center"><h3>Expert architect</h3>
+cras sit ameth nibh libero,in gravada nulla.Nulla vel metus scelerisque ante sollicitum</div>
+<div id="is6"  style="text-align:center"><h3>Sofa design</h3>
+cras sit ameth nibh libero,in gravada nulla.Nulla vel metus scelerisque ante sollicitum</div>
+</div>
+
+
+</body>
+</html>
